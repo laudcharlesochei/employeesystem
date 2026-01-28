@@ -81,9 +81,11 @@ else:
 '''
 
 
+# Define STATIC_ROOT
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-
+# Make sure STATIC_URL is also set
+STATIC_URL = '/static/'
 
 
 
