@@ -9,7 +9,27 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-change-me')
 
 DEBUG = os.getenv('DJANGO_DEBUG', 'True').lower() in {'1', 'true', 'yes', 'on'}
 
-ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', '127.0.0.1,localhost').split(',') if h.strip()]
+
+
+
+#ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', '127.0.0.1,localhost').split(',') if h.strip()]
+
+
+
+
+
+
+
+ALLOWED_HOSTS = []
+
+# Allow Heroku domains in production
+if 'DYNO' in os.environ:
+    ALLOWED_HOSTS.append('.herokuapp.com')
+
+# Always allow localhost
+ALLOWED_HOSTS.extend(['localhost', '127.0.0.1', '[::1]'])
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
