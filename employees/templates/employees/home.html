@@ -1,0 +1,23 @@
+{% extends "employees/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h2>{{ title }}</h2>
+  <p>{{ message }}</p>
+
+  <section class="card">
+    <h3>Quick start</h3>
+    <ol>
+      <li>Click <strong>Login</strong> (top right) and sign in.</li>
+      <li>Open <strong>Employees</strong> to manage employee records.</li>
+      <li>You can also create an admin user with <code>python manage.py createsuperuser</code>.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Interactivity demo (JavaScript)</h3>
+    <button id="messageBtn" class="btn btn-primary">Click Me</button>
+    <p id="message" class="muted"></p>
+  </section>
+{% endblock %}
