@@ -100,10 +100,10 @@ if ON_HEROKU:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'y0685wvb32e5idjq',
-            'USER': 'oqoyvdtvun34omkl',
-            'PASSWORD': 'hiro3jt1gppdmtfp',
-            'HOST': 'fojvtycq53b2f2kx.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+            'NAME': 'x5tp2sfprucamgsj',
+            'USER': 'sfcf7mc15za7v736',
+            'PASSWORD': 'er2el4wssm0q6jsv',
+            'HOST': 'o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             'PORT': '3306',
             'OPTIONS': {
                 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
